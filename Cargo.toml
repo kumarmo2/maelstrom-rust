@@ -1,0 +1,15 @@
+[package]
+name = "master"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name= "echo"
+path = "src/echo/echo.rs"
+
+[dependencies]
+async-trait = "0.1.83"
+maelstrom-node = "0.1.6"
+serde = "1.0.214"
+serde_json = "1.0.132"
+tokio = {version = "1.41.0", features =  ["full"]}
